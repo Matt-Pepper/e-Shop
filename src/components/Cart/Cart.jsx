@@ -5,7 +5,7 @@ import icon from '../../assets/cart-shopping-solid.svg'
 const Cart = () => {
     const navigate = useNavigate();
 const goToCart = () => {
-    navigate("/cart")
+    navigate("/e-Shop/cart")
 }
 
     return (

@@ -39,7 +39,7 @@ const Carousel = ({ products }) => {
 	};
 
 	const goToItem = () => {
-		navigate(`/product/${displayedProduct.id}`);
+		navigate(`/e-Shop/product/${displayedProduct.id}`);
 	};
 
 	return (

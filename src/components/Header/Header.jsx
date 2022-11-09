@@ -7,7 +7,7 @@ const Header = () => {
 
     const navigate = useNavigate();
     const goToHome = () => {
-        navigate("/")
+        navigate("/e-Shop/")
     }
     return (
         <header className={style.Header}>
