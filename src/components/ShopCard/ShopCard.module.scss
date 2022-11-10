@@ -10,6 +10,11 @@
     cursor: pointer;
     user-select: none;
 
+    & p{
+        margin-top: 10px;
+        color: #818181;
+    }
+
     &:hover {
         background-color: rgba(114, 147, 67, 0.3);
     }
@@ -30,6 +35,6 @@
 .ProductName {
     margin-top: 10px;
     font-size: 13pt;
-    color: #717a67;
+    color: #5f6d4f;
     
 }
