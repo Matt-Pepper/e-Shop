@@ -54,6 +54,7 @@ const Carousel = ({ products }) => {
 					>{`<`}</button>
 
 					<div className={style.Content} onClick={goToItem}>
+						<h2 className={style.Title}>Featured</h2>
 						<img
 							className={style.Image}
 							src={displayedProduct.image}

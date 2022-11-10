@@ -5,7 +5,7 @@ const ProductContainer = ({ products }) => {
 	return (
 		<main className={style.Products}>
 			{products.map((product) => {
-				return <ShopCard key={product.id} />;
+				return <ShopCard key={product.id} product={product} />;
 			})}
 		</main>
 	);

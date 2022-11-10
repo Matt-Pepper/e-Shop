@@ -3,7 +3,7 @@ import style from "./App.module.scss";
 import Header from "./components/Header/Header";
 import ProductPage from "./components/ProductPage/ProductPage";
 import StoreHome from "./components/StoreHome/StoreHome";
-import CartPage from "./components/CartPage/CartPage"
+import CartPage from "./components/CartPage/CartPage";
 function App() {
 	return (
 		<BrowserRouter>
