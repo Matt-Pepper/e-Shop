@@ -1,0 +1,28 @@
+.ButtonGroup {
+	display: flex;
+
+	& button {
+		flex-grow: 1;
+		line-height: 200%;
+		font-size: 15pt;
+		font-weight: 700;
+		margin: 10px;
+		background-color: white;
+		border-radius: 5px;
+		border: 2px solid rgb(158, 158, 158);
+
+		&:hover {
+			border: 2px solid rgb(54, 54, 54);
+		}
+		&:active {
+			background-color: rgb(185, 185, 185);
+			color: white;
+		}
+	}
+}
+
+.Quantity {
+	font-size: 20pt;
+	font-weight: 700;
+	text-align: center;
+}

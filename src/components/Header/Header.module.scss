@@ -1,23 +1,23 @@
 .Header {
-    background-color: #729343;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+	background-color: #729343;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .Logo {
-    width: 30%;
-    min-width: 200px;
-    padding: 10px;
-    cursor: pointer;
+	width: 30%;
+	min-width: 200px;
+	padding: 10px;
+	cursor: pointer;
 
-    &:hover {
-        background-color: rgba(255, 255, 255, 0.2);
-        border-radius: 20px;
-    }
-    &:active {
-        background-color: rgba(0, 0, 0, 0.2);
-        border-radius: 20px;
-    }
+	&:hover {
+		background-color: rgba(255, 255, 255, 0.2);
+		border-radius: 20px;
+	}
+	&:active {
+		background-color: rgba(0, 0, 0, 0.2);
+		border-radius: 20px;
+	}
 }

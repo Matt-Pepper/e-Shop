@@ -1,40 +1,39 @@
 .Card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 300px;
-    height: 400px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    user-select: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 300px;
+	height: 400px;
+	margin: 10px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	user-select: none;
 
-    & p{
-        margin-top: 10px;
-        color: #818181;
-    }
+	& p {
+		margin-top: 10px;
+		color: #818181;
+	}
 
-    &:hover {
-        background-color: rgba(114, 147, 67, 0.3);
-    }
+	&:hover {
+		background-color: rgba(114, 147, 67, 0.3);
+	}
 
-    &:active {
-        background-color: rgba(114, 147, 67, 0.6);
-    }
+	&:active {
+		background-color: rgba(114, 147, 67, 0.6);
+	}
 }
 
 .Image {
-    background-color: white;
-    margin-top: 10px;
-    width: 80%;
-    border: 1px solid rgba(114, 147, 67, 0.2);
-    padding: 10px;
+	background-color: white;
+	margin-top: 10px;
+	width: 80%;
+	border: 1px solid rgba(114, 147, 67, 0.2);
+	padding: 10px;
 }
 
 .ProductName {
-    margin-top: 10px;
-    font-size: 13pt;
-    color: #5f6d4f;
-    
+	margin-top: 10px;
+	font-size: 13pt;
+	color: #5f6d4f;
 }

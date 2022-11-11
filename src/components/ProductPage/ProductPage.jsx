@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getProductById } from "../../services/store";
+import AddToCart from "../AddToCart/AddToCart";
+import ColourPicker from "../ColourPicker/ColourPicker";
+import SizePicker from "../SizePicker/SizePicker";
 import style from "./ProductPage.module.scss";
 
 const ProductPage = () => {
@@ -25,6 +28,7 @@ const ProductPage = () => {
 
 	const handleColourChange = (selectedColour) => {
 		setColour(selectedColour);
+		setSize();
 	};
 
 	const handleSize = (selectedSize) => {
@@ -35,66 +39,40 @@ const ProductPage = () => {
 		<>
 			{product && (
 				<main className={style.Main}>
-					<section>
-						<img src={colour.image} alt={`${colour.colour} coloured shoe`} />
-					</section>
+					<img src={colour.image} alt={`${colour.colour} coloured shoe`} />
 					<section className={style.Product}>
 						<div className={style.Group}>
 							<h1>{product.product}</h1>
-							<p>Price: ${product.price}</p>
+							<h3>Price: ${product.price}</h3>
 						</div>
 						<div className={style.Group}>
-							<p>Colour: {colour.colour}</p>
-							<div className={style.ColourPicker}>
-								{Object.entries(product.colours).map(([colour, value], key) => {
-									return (
-										<button
-											key={key}
-											className={style.ColourButton}
-											onClick={() => {
-												handleColourChange({
-													colour: colour,
-													image: value.image,
-													sizes: value.sizes,
-												});
-											}}
-										>
-											<img
-												className={style.Image}
-												src={value.image}
-												alt={`${product.product} in ${colour} colour`}
-											/>
-											{colour}
-										</button>
-									);
-								})}
-							</div>
+							<h3>
+								Colour: <span className={style.Bold}>{colour.colour}</span>
+							</h3>
+							<ColourPicker
+								product={product}
+								handleColourChange={handleColourChange}
+							/>
 						</div>
 
 						<div className={style.Group}>
-							<p>Size: {size ? size.size : "Select a size"}</p>
-							<p>Quantity: {size ? size.quantity : ""}</p>
-							<div className={style.SizePicker}>
-								{Object.entries(colour.sizes).map(([size, value], key) => {
-									return value.quantity == 0 ? (
-										<button className={style.SizeButton} key={key} disabled>
-											{size}
-										</button>
-									) : (
-										<button className={style.SizeButton}
-											key={key}
-											onClick={() => {
-												handleSize({
-													size: size,
-													quantity: value.quantity,
-												});
-											}}
-										>
-											{size}
-										</button>
-									);
-								})}
-							</div>
+							<h3>
+								Size:{" "}
+								{size ? (
+									<span className={style.Bold}>{size.size}</span>
+								) : (
+									"Select a size"
+								)}
+							</h3>
+							<h3>
+								Quantity:{" "}
+								<span className={style.Bold}>{size ? size.quantity : ""}</span>
+							</h3>
+							<SizePicker colour={colour} handleSize={handleSize} />
+						</div>
+						<div className={style.Group}>
+							<h3>Add To Cart: </h3>
+							<AddToCart product={product} colour={colour} size={size} />
 						</div>
 					</section>
 				</main>

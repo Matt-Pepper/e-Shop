@@ -1,0 +1,39 @@
+.Card {
+	display: flex;
+	margin: 10px;
+	box-shadow: 0 0 5px black;
+	border-radius: 5px;
+}
+
+.Image {
+	height: 25vh;
+	flex-grow: 1;
+	width: auto;
+	margin-left: 10px;
+}
+
+.Section {
+	display: flex;
+	flex-direction: column;
+	width: fit-content;
+	align-items: center;
+	padding: 10px;
+}
+
+.Button {
+	line-height: 200%;
+	font-size: 15pt;
+	background-color: white;
+	border-radius: 5px;
+	border: 2px solid rgb(158, 158, 158);
+	margin: 5px;
+	padding: 5px;
+
+	&:hover {
+		border: 2px solid rgb(54, 54, 54);
+	}
+	&:active {
+		background-color: rgb(185, 185, 185);
+		color: white;
+	}
+}

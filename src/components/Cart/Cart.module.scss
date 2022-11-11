@@ -1,19 +1,19 @@
 .CartButton {
-    padding: 10px;
-    border-radius: 20px;
-    border: none;
-    margin: 5px 20px;
-    background-color: white;
-    cursor: pointer;
+	padding: 10px;
+	border-radius: 20px;
+	border: none;
+	margin: 5px 20px;
+	background-color: white;
+	cursor: pointer;
 
-    &:hover {
-        background-color: #C0E2A0;
-    }
-    &:active {
-        background-color: rgba(0, 0, 0, 0.7);
-    }
+	&:hover {
+		background-color: #c0e2a0;
+	}
+	&:active {
+		background-color: rgba(0, 0, 0, 0.7);
+	}
 }
 
 .ButtonIcon {
-    width: 50px;
+	width: 50px;
 }
