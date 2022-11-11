@@ -23,3 +23,10 @@
 	font-size: larger;
 	color: rgb(82, 82, 82);
 }
+
+.Image {
+	@media screen and (max-width: 800px){
+		width: 80%;
+		
+	}
+}

@@ -3,12 +3,17 @@
 	margin: 10px;
 	box-shadow: 0 0 5px black;
 	border-radius: 5px;
+	width: 90%;
+
+	@media screen and (max-width: 700px) {
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 .Image {
-	height: 25vh;
-	flex-grow: 1;
-	width: auto;
+	width: 50%;
+
 	margin-left: 10px;
 }
 

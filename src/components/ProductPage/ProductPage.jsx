@@ -39,7 +39,7 @@ const ProductPage = () => {
 		<>
 			{product && (
 				<main className={style.Main}>
-					<img src={colour.image} alt={`${colour.colour} coloured shoe`} />
+					<img className={style.Image} src={colour.image} alt={`${colour.colour} coloured shoe`} />
 					<section className={style.Product}>
 						<div className={style.Group}>
 							<h1>{product.product}</h1>
