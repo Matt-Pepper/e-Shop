@@ -1,9 +1,5 @@
 # E-Comerce Website Built With React
 
-## Table of Contents
-
-[E-Comerce](#e-comerce)
-
 ## [Link to Webpage](https://matt-pepper.github.io/e-Shop/)
 
 ![Website Screenshot](src/assets/storepage.PNG)
